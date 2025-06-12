@@ -1,2 +1,3 @@
 .venv
-source.db
+*.db
+*.db-journal
