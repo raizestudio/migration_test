@@ -1,0 +1,10 @@
+LOAD DATABASE
+     	FROM sqlite:///home/zeta/GitHub/migration_test/source.db
+	INTO postgresql://webcasino:webcasino@localhost/webcasino
+
+WITH include no drop, create tables, batch rows = 1000
+
+SET work_mem to '256MB',
+	maintenance_work_mem to '512 MB';
+
+
