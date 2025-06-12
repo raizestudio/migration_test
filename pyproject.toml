@@ -1,0 +1,9 @@
+[project]
+name = "migration-test"
+version = "0.1.0"
+description = "Benchmark SQLite to PostgreSQL migration using pgloader"
+dependencies = [
+    "faker>=37.4.0",
+    "tqdm>=4.67.1",
+]
+
